@@ -3,7 +3,7 @@
   padding: 20px;
   box-shadow: 1px 5px 16px 0px rgba(185, 192, 191, 0.493);
  
-  height: max-content;
+  height: 100%;
 }
 
 .quiz-history {

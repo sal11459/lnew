@@ -11,6 +11,7 @@ import Dashboard from "./components/Dashboard";
 import Quiz from "./components/Quiz";
 import Forgot from "./components/Forgot";
 import Profile from "./components/Profile";
+import Leaderboard  from "./components/Leaderboard";
 // import Linegraph from "./components/pages/LineGraph";
 // import Bargraph from "./components/pages/BarGraph";
 // import Pie from "./components/pages/Pie";
@@ -108,6 +109,20 @@ const App = () => {
           exact
           element={
             <Dashboard
+              user={user}
+              setUser={setUser}
+              userId={userId}
+              setUserId={setUserId}
+            />
+          }
+        />
+
+        
+        <Route
+          path="/leaderboard"
+          exact
+          element={
+            <Leaderboard
               user={user}
               setUser={setUser}
               userId={userId}
